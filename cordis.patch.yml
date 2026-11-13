@@ -1,0 +1,5 @@
+# dsh-away bundle patch —— 把「出门」挂进 profile 配置树。
+# id 固定；name 必须是包名（cordis 按 name import 包）。
+- insert:
+    - id: mo-out
+      name: 'dsh-away'

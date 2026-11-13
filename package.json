@@ -1,0 +1,48 @@
+{
+  "name": "dsh-away",
+  "version": "0.1.2",
+  "description": "出门：心情踩线时提醒散心的窗口——自己开一条「出门-日期」的会话，提醒投进去，回来记一笔。不管心情引擎、不管巡查、不抓 B 站数据。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/index.js.map",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ]
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "mood",
+    "outing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OWNER/dsh-away.git"
+  },
+  "homepage": "https://github.com/OWNER/dsh-away#readme",
+  "bugs": {
+    "url": "https://github.com/OWNER/dsh-away/issues"
+  }
+}
