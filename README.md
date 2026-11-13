@@ -12,7 +12,20 @@
 
 ## 安装
 
-profile 的 `dependencies` 里加 `"dsh-away": "link:/path/to/dsh-away"`，重启 DSH。设置左侧栏会出现「出门」。
+**从 GitHub 装（给别人用）**
+
+```bash
+cd ~/.dsh/profiles/desktop
+pnpm add git+https://github.com/zxl176463834/dsh-away.git
+```
+
+或者在 `~/.dsh/profiles/desktop/package.json` 的 `dependencies` 里加：
+
+```json
+"dsh-away": "github:zxl176463834/dsh-away"
+```
+
+本地开发用 `link:/path/to/dsh-away`。装完重启 DSH，设置左侧栏会出现「出门」。
 
 ## 依赖
 
@@ -44,11 +57,23 @@ POST /dsh-away/leg           记一笔「出门回来」
 POST /dsh-away/check         立刻检查一次（不花钱，调试用）
 ```
 
+## 数据与隐私
+
+- 配置和记账都在本机 `~/.dsh/mo-out/`，不上传
+- 跟情绪引擎只通过 `127.0.0.1` 的本机 HTTP 说话，不出这台机器
+- 没有遥测
+
 ## 自检
 
 ```bash
 node panel-check.mjs
 ```
+
+## 致谢
+
+| 名字 | 作者 | 地址 | 用途 |
+|---|---|---|---|
+| **DeepSeek Harness** | DeepSeek | [@deepseek-ai/dsh](https://www.npmjs.com/package/@deepseek-ai/dsh) | 运行环境、会话接口、插件宿主 |
 
 ## 许可
 
