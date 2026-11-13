@@ -38,10 +38,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/OWNER/dsh-away.git"
+    "url": "https://github.com/zxl176463834/dsh-away.git"
   },
-  "homepage": "https://github.com/OWNER/dsh-away#readme",
+  "homepage": "https://github.com/zxl176463834/dsh-away#readme",
   "bugs": {
-    "url": "https://github.com/OWNER/dsh-away/issues"
+    "url": "https://github.com/zxl176463834/dsh-away/issues"
   }
 }
